@@ -1,0 +1,12 @@
+{% load static %}
+
+{% include 'veriuser/styles.html' %}
+
+<div class="row">
+    <div class="">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</div>
+
+{% include 'veriuser/scripts.html' %}

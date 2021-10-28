@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="hh pb-5">
+    <div class="container pt-5 hh">
+        <div class="pt-5">
+            <div class="card card-body">
+                <h1 class="m-2 text-primary"><b>Recommended diet for people liable to Fungal Infection</b> </h1>
+            </div>
+            <div class="card card-body text-justify">
+                
+            </div>
+        </div>
+  
+</div>
+<style>
+    .hh {
+        background: url({% static 'images/pexels-any-lane-5946083.jpg' %});
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        opacity: 0.90;
+    }
+
+    body {
+        background: black;
+    }
+    footer{
+            background: orangered;
+        }
+</style>
+{% endblock content %}

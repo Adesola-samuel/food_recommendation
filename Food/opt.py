@@ -1,0 +1,1 @@
+l = 'django-insehgjalcure-x%0i^6hq&@=4&!io4*x6rl=$9)7bl(-pyt88sc6k+93t+jax84'

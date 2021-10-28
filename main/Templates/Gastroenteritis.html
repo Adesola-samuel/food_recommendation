@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="hh pb-5">
+    <div class="container pt-5 hh">
+        <div class="pt-5">
+            <div class="card card-body">
+                <h1 class="m-2 text-primary"><b>Recommended diet for people liable to Gastroenteritis</b> </h1>
+            </div>
+            <div class="card card-body text-justify">
+                <h1>Foods to eat</h1>
+                <ul>
+                    <li>Pastas</li>
+                    <li>Rice</li>
+                    <li>Lean meats prepared with little fat</li>
+                    <li>Low-fat cooked fish</li>
+                    <li>Eggs</li>
+                    <li>Fresh fruits, or fruits canned in their own juice</li>
+                    <li>Cooked vegetables</li>
+                    <li>Sugar-free cereals</li>
+                    <li>Bread</li>
+                    
+                </ul>
+                <h1>You can eat the following foods if you tolerate them well or if they are lactose free:</h1>
+                <ul>
+                    <li>low-fat yogurt;</li>
+                    <li>low-fat cheese;</li>
+                    <li>milk.</li>
+                </ul>
+                <h1>Foods and drinks to avoid</h1>
+                <ul>
+                    <li>Fruit juices that contain a lot of sugar and fruit drinks</li>
+                    <li>Sports drinks such as Gatorade</li>
+                    <li>Soft or carbonated drinks</li>
+                    <li>Caffeinated drinks</li>
+                    <li>Broths and canned or packaged soups</li>
+                    <li>Fried foods or those rich in fat (delicatessen, potato chips, French fries, pastries)</li>
+                    <li>Ice cream, sherbet, popsicles and jellies (such as Jell-O)</li>
+                    <li>Dried fruits, fruits canned in syrup</li>
+                    <li>Sweet cereals</li>
+                    <li>Candy and chocolate</li>
+                    <li>Very spicy foods</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        .hh {
+            background: url({% static 'images/pexels-any-lane-5946083.jpg' %});
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            opacity: 0.90;
+        }
+
+        body {
+            background: black;
+        }
+        footer{
+            background: orangered;
+        }
+    </style>
+    {% endblock content %}

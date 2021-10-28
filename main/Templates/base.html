@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>DR SMART</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    {% include 'veriuser/styles.html' %}
+
+    <!-- =======================================================
+  * Template Name: DevFolio - v2.3.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body id="page-top" class="">
+    {% include 'nav.html' %}
+
+    <main>
+        <div class="overlay-itro"></div>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    
+
+
+    {% include 'footer.html' %}
+
+    <a href="{% static '#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    {% include 'veriuser/scripts.html' %}
+
+</body>
+
+</html>

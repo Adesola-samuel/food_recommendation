@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="hh pb-5">
+    <div class="container pt-5 hh">
+        <div class="pt-5">
+            <div class="card card-body">
+                <h1 class="m-2 text-primary"><b>Recommended diet for people liable to Peptic Ulcer Diesease</b> </h1>
+            </div>
+            <div class="card card-body text-justify">
+                <h1>Stomach Ulcer Diet</h1>
+                <p>Ulcer disease is a condition in which open sores develop in the lining of the
+                    gastrointestinal tract. They can occur in the upper portion of the small
+                    intestine (duodenal ulcer), stomach (gastric ulcer), and esophagus
+                    (esophageal ulcer). Contrary to long-standing common belief, stress does not
+                    cause ulcers. Instead, the leading cause of ulcer disease is a bacterium called
+                    Helicobacter pylori (H. pylori). These bacteria damage the protective mucosal
+                    barrier of certain areas within the gastrointestinal tract, making it easier for
+                    acidic digestive fluids to injure and inflame the gut’s lining. Other causes
+                    include smoking and chronic use of non-steroidal anti-inflammatory drugs
+                    (NSAIDs), such as aspirin and ibuprofen.1
+                    The cause of your ulcer will determine the type of medical treatment that your
+                    physician recommends. If caused by NSAID use, then your doctor may
+                    discontinue prescribing NSAID medication, suggest a different pain
+                    medication, or continue NSAID use and add another medication to protect your stomach and duodenum,
+                    such
+                    as a proton pump inhibitor (PPI), which
+                    reduces production of stomach acid.
+                    If H. pylori infection is the cause of your ulcer, then your doctor may prescribe
+                    a treatment plan to kill the infection while reducing the acid in your stomach.
+                    Physicians often recommend lifestyle and dietary changes for persons with
+                    ulcers in addition to medications until complete healing occurs. Although in
+                    the past patients were encouraged to follow a bland diet, current research
+                    does not support this dietary modification to be beneficial. Although spicy
+                    foods are an irritant for some people with ulcers, medical professionals now
+                    place more emphasis on a high fibre diet rich in vegetables and fruits.</p>
+                <h1>Dietary Fibre & Vitamin A</h1>
+                <P>Research shows that a high fibre diet decreases the risk of developing ulcer
+                    disease. Although both insoluble and soluble fibres demonstrate this
+                    association, there is a stronger association between diets high in soluble fibre
+                    and a decreased risk for developing ulcers.
+                    Foods that are high in soluble fibre include oats, psyllium husk, legumes, flax
+                    seeds, barley, nuts, and certain vegetables and fruits, such as oranges, apples,
+                    and carrots.
+                    Findings from a prospective cohort study that included 47,806 men, showed
+                    that a diet rich in vitamin A from all sources might reduce the development of
+                    duodenal ulcer, as might diets high in fruits and vegetables, possibly due to
+                    their fibre content.2 A prospective cohort study follows, over time, a group of
+                    similar individuals (cohort) who differ with respect to certain factors under
+                    study, to determine how these factors affect rates of a certain outcome;
+                    however, more research is necessary to verify results because there are so
+                    many other factors involved with this type of study that could confound the
+                    data.
+                    Animal studies demonstrate that vitamin A increases the production of mucus
+                    in the gastrointestinal tract. Impaired mucosal defense can allow ulcers to
+                    develop. Therefore, vitamin A may have a protective effect against the
+                    development of ulcer disease.3
+                    Good sources of vitamin A include liver, carrots, broccoli, sweet potatoes, kale,
+                    spinach, and collard greens.</P>
+                <h1>Green Tea and Flavonoid-RichFoods</h1>
+                <p>Emerging research from China shows the potential protective effects of green
+                    tea and other foods that are rich in flavonoids against Both caffeinated and decaffeinated coffee
+                    can
+                    increase acid production and
+                    exacerbate symptoms in individuals with ulcer disease.6 Alcoholic beverages
+                    can erode the protective mucosal lining along the gastrointestinal tract and
+                    lead to further inflammation and bleeding. To minimize symptoms, individuals
+                    with ulcer disease should avoid or limit both coffee and alcohol.</p>
+                <h1>Cranberry Juice Cocktail</h1>
+                <p>Drinking just two 250mL cups of cranberry juice cocktail per day might reduce
+                    the risk of H. pylori overgrowth in the stomach.7 Concerns about antibiotic
+                    resistance make this finding especially significant because cranberry tannins
+                    appear to block the bacteria without destroying them. When antibiotics are
+                    used to eradicate infection, the bacteria may mutate and become resistant to
+                    treatment. Cranberry helps by either not allowing the bacteria to attach itself
+                    or by disengaging it from the body once it is attached, and prevent
+                    inflammation. So drink up, cranberry juice cocktail is good for you!</p>
+                <h1>Assess Your IndividualTolerance</h1>
+                <p>No evidence suggests that spicy or citrus foods affect ulcer disease, although
+                    some individuals do report worsening of symptoms after eating these types of
+                    foods. It is important to find out what works for you. If you notice that your
+                    symptoms get worse after eating certain foods, then limit or avoid them so
+                    you can feel your best, making sure that you don’t eliminate an entire food
+                    group.</p>
+                <h1>Conclusion</h1>
+                <p>In summary, if you suffer from peptic ulcer disease, then aim to have a diet
+                    high in fibre and rich in vegetables, fruits, and whole grains. Try for a minimum
+                    of seven servings of vegetables and fruits each day, and a minimum of five servings of whole grains.
+                    Choose foods that are a good source of soluble fibre,
+                    vitamin A, and flavonoids. Consider adding tea to your daily list of beverages.
+                    If you drink alcohol, do so in moderation, with no more than two drinks per day,
+                    and no more than nine drinks per week for women (fourteen for men).</p>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        .hh {
+            background: url({% static 'images/pexels-any-lane-5946083.jpg' %});
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            opacity: 0.90;
+        }
+
+        body {
+            background: black;
+        }
+
+        footer {
+            background: orangered;
+        }
+    </style>
+    {% endblock content %}

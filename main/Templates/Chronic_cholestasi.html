@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="hh pb-5">
+    <div class="container pt-5 hh">
+        <div class="pt-5">
+            <div class="card card-body">
+                <h1 class="m-2 text-primary"><b>Recommended diet for people liable to Chronic Cholestasis</b> </h1>
+            </div>
+            <div class="card card-body text-justify">
+                <p class="lead">To reduce the risk of cholestasis, it
+                    is important to follow a healthful, balanced diet with plenty of fresh fruit
+                    and vegetables.</p>
+                <p class="text-danger">Organic produce is less likely to be affected by pesticides and other
+                    toxins.
+                    Apples, strawberries, and grapes often contain higher amounts of
+                    unwanted chemicals, while avocados, sweetcorn, and pineapple top the
+                    “clean” list.</p>
+                If canned produce is used, check that it is preserved in its own juice and
+                that there are no added sugars.
+                Choose certified organic meat and avoid fried fish and raw seafood.
+                Dried beans and legumes, such as lentils and chickpeas, are a good
+                source of protein.
+                Focus on whole foods, such as whole-grain bread.
+                <h1>Avoid the following:</h1>
+                <ul>
+                    <li>sugars and highly refined foods, such as white bread and corn syrup</li>
+                    <li>soy products</li>
+                    <li>processed meats</li>
+                    <li>full-fat dairy produce</li>
+                    <li>drinks and sodas, such as cola.</li>
+                    <li>Drinking alcohol will not cause cholestasis, but alcohol should be avoided, as it can lead to a
+                        number of complications, including other types of liver disease.</li>
+                </ul>
+                <p class="text-danger">It is important to follow the doctor’s instructions regarding treatment and
+                    diet. Diet is not an alternative to medication that is prescribed by the
+                    physician.</p>
+                It is also important to check that any “organic” produce is really organic.
+                It should be 100-percent organic. Foods labeled as “natural” are not
+                necessarily organic or healthful.
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .hh {
+        background: url({% static 'images/pexels-any-lane-5946083.jpg' %});
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        opacity: 0.90;
+    }
+
+    body {
+        background: black;
+    }
+
+    footer {
+        background: orangered;
+    }
+</style>
+{% endblock content %}

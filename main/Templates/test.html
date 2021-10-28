@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<style>
+    main {
+        background: url({% static 'images/pexels-gustavo-fring-3985166.jpg' %});
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        opacity:0.75;
+    }
+    body{
+        background: grey;
+    }
+</style>
+
+<div class="container p-5">
+    <form action="" method='POST'>
+        {% csrf_token %}
+
+
+        <div class="card card-body m-3 p-3">
+            <div class='row'>
+                <div class='col col-md-12'>Is your body itching you?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.itching|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Did you notice any rashes on your Skin?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.skin_rash|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you vomiting?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.vomiting|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you feeling weak></div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.fatigue|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you losing weight?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.weight_loss|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Do you experience irregular sugar level?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.irregular_sugar_level|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are your eyes looking smaller than usual?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.sunken_eyes|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you feeling dehydrated?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.dehydration|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you having problem with food digestion</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.indigestion|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Do you noticed your skin looking yellowish?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.yellowish_skin|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Did you noticed stomach distress with distaste for food and an urge to vomit?
+                </div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.nausea|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you finding it dificult to eat your facourite food?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.loss_of_appetite|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Do you feel pain arround your abdomen?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.abdominal_pain|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Have you been to the toilet more than three (3) times in a day?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.diarrhoea|as_crispy_field}}</div>
+            </div>
+        </div>
+
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Did you noticed your eye balls turning yellow?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.yellowing_of_eyes|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you experiencing blurred and distorted vision recently?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.blurred_and_distorted_vision|as_crispy_field}}
+                </div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you have problem with excessive fat in your body?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.obesity|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you feeling very hungry?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.excessive_hunger|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Have you been gassing very frequently?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.passage_of_gases|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Do you feel like scratching your intestine?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.internal_itching|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Did you noticed strange colored patches on your skin?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.dischromic_patches|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are you experiencing an increse of appetite?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.increased_appetite|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <div class='row'>
+                <div class='col col-md-12'>Are suffering excessive secretion of urine?</div>
+            </div>
+            <div class='row'>
+                <div class='control form-inline col m-1'>{{ form.polyuria|as_crispy_field}}</div>
+            </div>
+        </div>
+        <div class="card card-body m-3">
+            <button type="submit" class="btn btn-primary ">Submit</button>
+        </div>
+
+    </form>
+</div>
+{% endblock content %}

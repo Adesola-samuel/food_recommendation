@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="hh pb-5">
+    <div class="container pt-5 hh">
+        <div class="pt-5">
+            <div class="card card-body">
+                <h1 class="m-2 text-primary"><b>Result</b> </h1>
+            </div>
+
+        </div>
+        <div class="mt-2">
+            <div class="card card-body p-5">
+                <big><big>Test Analysis from Dr. Smart(Robot) shows that your are liable to <span class="text-danger"><b>{{prognosis}}.</b></span> 
+                However, you can completely prevent this situation by folowing the doctors dietary advice and improving your nutrition. <span class="text-info"> <blink>Click the button bellow to check your recommended nutrition.</blink> </span></big></big>
+                <a href="{% url 'main:diet' prognosis %}" class="btn btn-primary btn-block"> <b>Reccommended diet for people liable to {{prognosis}}</b></a>
+            </div>
+        </div>
+        <img src="{% static 'images/pexels-anna-tukhfatullina-food-photographerstylist-2611810.jpg' %}" alt="img" width="100%" height="300px;">
+    </div>
+</div>
+<style>
+    .hh {
+        background: url({% static 'images/pexels-gustavo-fring-3985166.jpg' %});
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        opacity: 0.90;
+    }
+
+    body {
+        background: black;
+    }
+</style>
+{% endblock content %}
